@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjCampanhas.Application\ProjCampanhas.Application.csproj" />
+    <ProjectReference Include="..\ProjCampanhas.Infra.Cache.MongoDB\ProjCampanhas.Infra.Cache.MongoDB.csproj" />
+    <ProjectReference Include="..\ProjCampanhas.Infra.Data.SqlServer\ProjCampanhas.Infra.Data.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>
