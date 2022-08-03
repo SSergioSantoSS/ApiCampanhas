@@ -15,7 +15,7 @@ namespace ProjCampanhas.Services.Configurations
             var mogoDBSettings = new MongoDBSettings();
 
             //capturar os parametros do appsettings.json
-            new ConfigureFromConfigurationOptions<MongoDBSettings>(builder.Configuration.GetSection("MongDBSettings"))
+            new ConfigureFromConfigurationOptions<MongoDBSettings>(builder.Configuration.GetSection("mongoDBSettings"))
                 .Configure(mogoDBSettings);
 
             //mapeando a injeção de dependência
